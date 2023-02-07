@@ -1,6 +1,7 @@
 import { createBrowserRouter, Outlet, RouterProvider, } from "react-router-dom";
 import { Home, Login, Register, Single, Write } from "./pages";
 import { Navbar, Footer } from "./components";
+import './style.scss'
 
 
 const Layout = () => {
