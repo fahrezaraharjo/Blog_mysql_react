@@ -65,6 +65,8 @@ $lightGreen : #b9e7e7;
 
         //NAVBAR
         .navbar {
+            top: 0;
+
             .container {
                 padding: 10px 0px;
                 display: flex;
@@ -148,7 +150,7 @@ $lightGreen : #b9e7e7;
                     display: flex;
                     gap: 100px;
 
-                    &:nth-child(2n+1){
+                    &:nth-child(2n+1) {
                         flex-direction: row-reverse;
                     }
 
@@ -156,7 +158,7 @@ $lightGreen : #b9e7e7;
                         flex: 2;
                         position: relative;
 
-                        &::after{
+                        &::after {
                             content: "";
                             width: 100%;
                             height: 100%;
@@ -195,7 +197,7 @@ $lightGreen : #b9e7e7;
                             cursor: pointer;
                             background-color: white;
                             border: 1px solid teal;
-                            color: teal ;
+                            color: teal;
 
                             &:hover {
                                 border: 1px solid white;
@@ -209,6 +211,164 @@ $lightGreen : #b9e7e7;
                 }
             }
         }
+
+        //SINGLE
+
+        .single {
+            display: flex;
+            gap: 50px;
+
+            .content {
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 14px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+
+                .editdelete {
+                    display: flex;
+                    flex-direction: row;
+
+                    .edit {
+                        display: flex;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        background-color: $lightGreen;
+                        width: 30px;
+                        align-items: center;
+                        justify-content: center;
+                        height: 30px;
+                        font-weight: 400;
+                        border: 1px solid white;
+
+                        &:hover {
+                            color: teal;
+                            background-color: rgb(255, 255, 255);
+                            border: 1px solid rgb(121, 245, 6);
+                        }
+                    }
+
+                    .delete {
+                        display: flex;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        background-color: $lightGreen;
+                        width: 30px;
+                        align-items: center;
+                        justify-content: center;
+                        height: 30px;
+                        font-weight: 400;
+                        border: 1px solid white;
+
+                        &:hover {
+                            background-color: rgb(255, 255, 255);
+                            border: 1px solid rgb(175, 3, 3);
+                        }
+                    }
+                }
+
+                h1 {
+                    color: #333;
+                    font-size: 42px;
+                }
+
+                p {
+                    text-align: justify;
+                    line-height: 30px;
+                }
+
+            }
+
+            .menu {
+                flex: 2;
+                flex-direction: column;
+                display: flex;
+                gap: 25px;
+
+                h1 {
+                    font-size: 20px;
+                    color: #555;
+                }
+
+                .post {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    img {
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        color: #555;
+                    }
+
+                    button {
+                        width: max-content;
+                        padding: 7.5px 15px;
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        border: 1px solid teal;
+                        color: teal;
+
+                        &:hover {
+                            border: 1px solid white;
+                            background-color: $lightGreen;
+                            color: black;
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        //WRITE
+
+        .add {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+
+            .content {
+                flex: 5;
+            }
+
+            .menu {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
 
     }
 
